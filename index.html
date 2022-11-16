@@ -22,7 +22,7 @@
     <div class="row">
       <div class="col-md-3">
         <div class="well">
-          <h5>Test Subject ID No.:</h5>
+          <h4>Test Subject ID No.:</h4>
           <select id="selTestSubjects" onchange="dropdown_changed(this.value)"></select>
         </div>
         <div class="panel panel-primary">
@@ -36,19 +36,24 @@
         <div id="bar"></div>
       </div>
       <div class="col-md-6">
-        <img id="gauge" src="images/scrubs_0.png" class="img-responsive" alt="gauge at 0">
+        <img id="gauge" src="images/bacteria.jpg" class="img-responsive" alt="gauge at 0">
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
+        <div class="col-md-6">
+          <img id="gauge" src="images/bacteria.jpg" class="img-responsive" alt="gauge at 0">
+        </div>
       </div>
+
     </div>
   </div>
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="./static/js/app.js"></script>
+  <script src="app.js"></script>
+  <script src="./static/js/bonus.js"></script>
   
 </body>
 

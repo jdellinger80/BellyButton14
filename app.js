@@ -10,6 +10,7 @@
         test_subjects = data.names.sort(function(a, b){return a - b});        
         demographics = data.metadata;
         samples = data.samples;
+        console.log(test_subjects);
     
         load_dropdown();
     });
@@ -124,6 +125,6 @@
         demo_item = demographics.filter((entry)=> {return entry.id == test_subject;})[0];
         wfreq = demo_item.wfreq === null ? 0 : demo_item.wfreq;
 
-        guage_ref = 'images/scrubber_y.png'.replace('y', Math.round(wfreq));
+        guage_ref = 'images/scrubber_2.png'.replace('y', Math.round(wfreq));
         guage = d3.select("#gauge").attr('src', guage_ref);
     }
